@@ -12,13 +12,13 @@ int main()
   playGame();
 
   char playAgain;
-  printf("Would you like to play again (Y/N)?");
+  printf("Would you like to play again (Y/N)? ");
   scanf_s(" %c", &playAgain);
 
   while (playAgain == 'Y' || playAgain == 'y')
   {
     playGame();
-    printf("Would you like to play again (Y/N)?");
+    printf("Would you like to play again (Y/N)? ");
     scanf_s(" %c", &playAgain);
   }
 
