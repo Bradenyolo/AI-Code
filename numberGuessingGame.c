@@ -8,23 +8,25 @@ void playGame();
 
 int main()
 {
-  printf("Welcome to the number guessing game!\n");
-  playGame();
-
-  char playAgain;
-  printf("Would you like to play again (Y/N)? ");
-  scanf_s(" %c", &playAgain);
-
-  while (playAgain == 'Y' || playAgain == 'y')
-  {
+    printf("Welcome to the number guessing game!\n");
     playGame();
+
+    char playAgain;
     printf("Would you like to play again (Y/N)? ");
     scanf_s(" %c", &playAgain);
-  }
 
-  printf("Thank you for playing!\n");
+    while (playAgain == 'Y' || playAgain == 'y')
+    {
+        system("cls");
 
-  return 0;
+        playGame();
+        printf("Would you like to play again (Y/N)? ");
+        scanf_s(" %c", &playAgain);
+    }
+
+    printf("Thank you for playing!\n");
+
+    return 0;
 }
 
 void playGame()
