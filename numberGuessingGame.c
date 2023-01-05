@@ -17,7 +17,7 @@ int main()
 
   while (playAgain == 'Y' || playAgain == 'y')
   {
-    system("clear");  // Clear the screen (AI made this comment, I already knew this command during C++ learning)
+    system("cls");  // Clear the screen (AI made this comment, I already knew this command during C++ learning)
     playGame();
     printf("Would you like to play again (Y/N)?");
     scanf_s(" %c", &playAgain);
