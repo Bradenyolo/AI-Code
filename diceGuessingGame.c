@@ -47,6 +47,13 @@ void playGame()
         sum = die1 + die2;
 
         printf("Enter your guess: ");
+          if (scanf_s("%d", &guess) != 1)
+          {
+              // Invalid input was entered
+              printf("Please enter a valid number.\n");
+              fflush(stdin);  // Clear the input buffer
+              continue;  // Go back to the start of the loop
+          }
         scanf_s("%d", &guess);
         numTries++;
 
