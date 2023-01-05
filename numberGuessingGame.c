@@ -1,4 +1,6 @@
 // made with ChatGPT
+// If you want to make scripts like this, go to ChatGPT's website (you may need a login)
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
