@@ -12,15 +12,15 @@ int main()
   playGame();
 
   char playAgain;
-  printf("Would you like to play again (Y/N)? ");
-  scanf_s("%c", &playAgain);
+  printf("Would you like to play again (Y/N)?");
+  scanf_s(" %c", &playAgain);
 
   while (playAgain == 'Y' || playAgain == 'y')
   {
-    system("clear");  // Clear the screen
+    system("clear");  // Clear the screen (AI made this comment, I already knew this command during C++ learning)
     playGame();
-    printf("Would you like to play again (Y/N)? ");
-    scanf_s("%c", &playAgain);
+    printf("Would you like to play again (Y/N)?");
+    scanf_s(" %c", &playAgain);
   }
 
   printf("Thank you for playing!\n");
